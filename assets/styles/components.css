@@ -1,0 +1,177 @@
+/* =========================================================
+   COMPONENTS
+   Front page recipe list, back button and disclaimer.
+   ========================================================= */
+
+/* ---------- Front Page Recipe List ---------- */
+
+.recipe-list {
+    list-style: none;
+
+    margin: 0;
+    padding: 0;
+
+    display: grid;
+    gap: 14px;
+}
+
+.recipe-list a {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    min-height: 68px;
+    padding: 17px 22px;
+
+    color: #4b3d59;
+    background: #f8f4fb;
+
+    border: 2px solid transparent;
+    border-radius: 18px;
+
+    font-size: 1.05rem;
+    font-weight: 700;
+    text-decoration: none;
+
+    transition:
+        background-color 0.2s ease,
+        border-color 0.2s ease,
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+/*
+   Different pastel accent for each recipe.
+   The nth-child rules are optional but give
+   the front page a more playful appearance.
+*/
+
+.recipe-list li:nth-child(1) a {
+    background: #edf7f2;
+}
+
+.recipe-list li:nth-child(2) a {
+    background: #f4eff9;
+}
+
+.recipe-list li:nth-child(3) a {
+    background: #fff2ea;
+}
+
+
+/* Arrow */
+
+.recipe-list a::after {
+    content: "↗";
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 34px;
+    height: 34px;
+
+    margin-left: auto;
+
+    color: #ffffff;
+    background: #a58bb5;
+
+    border-radius: 50%;
+
+    font-size: 1rem;
+
+    transition:
+        transform 0.2s ease,
+        background-color 0.2s ease;
+}
+
+
+/* Hover */
+
+.recipe-list a:hover {
+    border-color: #cbbbd6;
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 10px 24px rgba(73, 57, 88, 0.10);
+}
+
+.recipe-list li:nth-child(1) a:hover {
+    border-color: #b9d9cb;
+}
+
+.recipe-list li:nth-child(2) a:hover {
+    border-color: #cdb9d9;
+}
+
+.recipe-list li:nth-child(3) a:hover {
+    border-color: #e8c5ad;
+}
+
+.recipe-list a:hover::after {
+    transform: rotate(8deg) scale(1.08);
+}
+
+.recipe-list a:focus-visible {
+    outline: 3px solid #b9a3c8;
+    outline-offset: 4px;
+}
+
+
+/* ---------- Back Button ---------- */
+
+.back-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+
+    padding: 11px 18px;
+
+    color: #5c4d68;
+    background: #f1ebf5;
+
+    border: none;
+    border-radius: 14px;
+
+    font-family: inherit;
+    font-size: 0.95rem;
+    font-weight: 800;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.back-button:hover {
+    background: #e8dff0;
+
+    transform: translateX(-3px);
+
+    box-shadow: 0 6px 14px rgba(73, 57, 88, 0.10);
+}
+
+.back-button:focus-visible {
+    outline: 3px solid #b9a3c8;
+    outline-offset: 4px;
+}
+
+
+/* ---------- Disclaimer ---------- */
+
+.disclaimer {
+    margin: 0;
+
+    font-size: 0.78rem;
+    line-height: 1.4;
+
+    color: #aaa0b0;
+
+    font-style: italic;
+    text-align: right;
+}

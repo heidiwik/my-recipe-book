@@ -1,0 +1,14 @@
+/* =========================================================
+   PASTEL RECIPE BOOK
+   Single entry point. Every page links only to this file.
+
+   Import order matters: it defines the cascade, so keep
+   responsive.css last.
+   ========================================================= */
+
+@import url("base.css");
+@import url("layout.css");
+@import url("components.css");
+@import url("recipe.css");
+@import url("page-backgrounds.css");
+@import url("responsive.css");

@@ -1,0 +1,74 @@
+/* =========================================================
+   BASE
+   Reset, page background and global typography.
+   ========================================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    min-height: 100%;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    font-family: "Nunito", sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+
+    color: #40364d;
+
+    /*
+       A soft lavender/mint atmosphere rather than
+       the usual beige food-blog look.
+    */
+    background:
+        linear-gradient(
+            135deg,
+            rgba(225, 235, 230, 0.18),
+            rgba(237, 226, 241, 0.18)
+        ),
+        url("../images/cake.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    padding: 7vh 20px;
+}
+
+
+/* ---------- Recipe Title ---------- */
+
+h1 {
+    margin: 0 0 38px;
+
+    font-family: "Nunito", sans-serif;
+    font-size: clamp(2.6rem, 6vw, 4rem);
+    line-height: 1.05;
+    font-weight: 800;
+    letter-spacing: -0.045em;
+
+    color: #4b3d59;
+}
+
+
+/* ---------- Intro Text ---------- */
+
+.intro {
+    margin: 0 0 36px;
+    max-width: 620px;
+
+    font-size: 1.08rem;
+    line-height: 1.8;
+
+    color: #70657b;
+}

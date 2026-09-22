@@ -1,0 +1,70 @@
+/* =========================================================
+   LAYOUT
+   The centered recipe card and its footer row.
+   ========================================================= */
+
+/* ---------- Recipe Card ---------- */
+
+#recipe {
+    position: relative;
+
+    width: 100%;
+    max-width: 740px;
+
+    padding: 56px;
+
+    /*
+       Almost-white with a hint of lavender.
+       Less "paper", more modern interface.
+    */
+    background: rgba(253, 251, 255, 0.95);
+
+    border: 1px solid rgba(255, 255, 255, 0.9);
+    border-radius: 32px;
+
+    box-shadow:
+        0 30px 70px rgba(73, 57, 88, 0.16),
+        0 8px 20px rgba(73, 57, 88, 0.07);
+
+    backdrop-filter: blur(12px);
+}
+
+
+/*
+   Decorative pastel shape.
+   This gives the page some personality without
+   requiring extra HTML.
+*/
+
+#recipe::before {
+    content: "";
+
+    position: absolute;
+
+    width: 130px;
+    height: 130px;
+
+    top: -45px;
+    right: -35px;
+
+    background: #dcefe8;
+
+    border-radius: 43% 57% 62% 38% / 48% 42% 58% 52%;
+
+    z-index: -1;
+}
+
+
+/* ---------- Footer Row ---------- */
+
+.recipe-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+
+    margin-top: 46px;
+    padding-top: 28px;
+
+    border-top: 2px solid #f0ebf3;
+}

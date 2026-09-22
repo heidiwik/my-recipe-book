@@ -1,0 +1,16 @@
+/* =========================================================
+   RECIPE-SPECIFIC BACKGROUNDS
+   Per-page overrides of the default body background.
+   ========================================================= */
+
+.pizza-page {
+  background-image: url("../images/pizza.png");
+}
+
+.pancake-page {
+  background-image: url("../images/pancake.jpg");
+}
+
+.chocolate-cake-page {
+  background-image: url("../images/choco.png");
+}

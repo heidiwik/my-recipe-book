@@ -1,0 +1,76 @@
+/* =========================================================
+   MOBILE
+   Must stay last so these overrides win.
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 18px 12px;
+
+        background-attachment: scroll;
+    }
+
+    #recipe {
+        padding: 34px 24px;
+
+        border-radius: 24px;
+    }
+
+    #recipe::before {
+        width: 90px;
+        height: 90px;
+
+        top: -25px;
+        right: -20px;
+    }
+
+    h1 {
+        margin-bottom: 30px;
+
+        font-size: 2.7rem;
+    }
+
+    .intro {
+        font-size: 1rem;
+    }
+
+    .recipe-list a {
+        min-height: 62px;
+        padding: 15px 17px;
+    }
+
+    #ingredients {
+        padding: 23px;
+
+        margin-bottom: 38px;
+    }
+
+    #ingredients ul {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+
+    .instructions li {
+        grid-template-columns: 38px 1fr;
+        gap: 14px;
+
+        margin-bottom: 20px;
+    }
+
+    .instructions li::before {
+        width: 36px;
+        height: 36px;
+
+        border-radius: 12px 15px 12px 15px;
+    }
+
+    .recipe-footer {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .disclaimer {
+        text-align: left;
+    }
+}
